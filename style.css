@@ -244,6 +244,10 @@ a {
   flex-wrap: wrap;
 }
 
+.video {
+  margin-top: 1rem;
+}
+
 /* Media Query */
 @media screen and (min-width: 768px) {
   .header {
