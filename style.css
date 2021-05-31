@@ -113,11 +113,15 @@ a {
 #main {
   background-color: #212529;
   color: #fff;
-  padding: 80px 20px 50px;
 }
 
 .main-section {
+  padding: 80px 20px 50px;
   text-align: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)),
+    url('./images/main-bg.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 #title {
@@ -155,7 +159,8 @@ a {
 /* Tribute Info Section */
 #tribute-info {
   width: 90%;
-  margin: 4rem auto;
+  margin: 2rem auto;
+  padding: 0 20px;
 }
 
 .section-title {
@@ -171,7 +176,8 @@ a {
 /* Albums Section */
 .albums-section {
   width: 90%;
-  margin: 4rem auto;
+  margin: 2rem auto;
+  padding: 0 20px;
 }
 
 .albums-container {
@@ -224,6 +230,20 @@ a {
   opacity: 1;
 }
 
+/* Videos Section */
+.videos-section {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.videos-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
 /* Media Query */
 @media screen and (min-width: 768px) {
   .header {
@@ -255,6 +275,10 @@ a {
   }
 
   /* main */
+  .main-section {
+    height: 130vh;
+  }
+
   #title {
     font-size: 5rem;
   }
